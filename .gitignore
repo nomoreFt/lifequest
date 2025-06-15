@@ -1,0 +1,88 @@
+## [공통 빌드, 의존성, 바이너리]
+node_modules/
+build/
+out/
+bin/
+dist/
+nbbuild/
+nbdist/
+.gradle/
+.nb-gradle/
+.kotlin/
+# gradle wrapper 외엔 build에 들어가니 예외 설정
+!gradle/wrapper/gradle-wrapper.jar
+
+## [Vaadin/Hilla 프론트엔드]
+src/main/frontend/node_modules/
+src/main/frontend/build/
+src/main/frontend/dist/
+src/main/frontend/.pnp/
+src/main/frontend/.yarn/
+src/main/frontend/.yarnrc.yml
+src/main/frontend/yarn.lock
+
+## [IDE/Editor 환경]
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.springBeans
+.sts4-cache
+# NetBeans
+/nbproject/private/
+.factorypath
+.apt_generated
+.classpath
+.project
+
+## [테스트 산출물]
+**/src/main/**/build/
+**/src/test/**/build/
+**/src/main/**/out/
+**/src/test/**/out/
+**/src/main/**/bin/
+**/src/test/**/bin/
+
+## [OS별]
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+
+## [로그, 환경파일, 개인 설정]
+*.log
+*.env
+.env.*
+!.env.example
+*.local
+*.tmp
+*.bak
+
+## [Vaadin generated]
+# Vaadin 빌드시 생성되는 리소스(컴파일 결과)
+src/main/frontend/generated/**
+src/main/resources/META-INF/VAADIN/
+src/main/resources/static/VAADIN/
+src/main/webapp/VAADIN/
+# Hilla 타입 생성물
+
+## [SonarQube, 기타]
+.sonar/
+coverage/
+coverage-final.json
+
+## [HELP, 문서, 기타]
+HELP.md
+
+# (원하는 파일 직접 추가/제외)
